@@ -1,0 +1,26 @@
+name: c_disk_cleaning_program
+description: A Flutter-based C disk cleaning application similar to the Python version.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  path_provider: ^2.0.15
+  permission_handler: ^10.4.3
+  win32: ^5.0.0
+  intl: ^0.18.1
+  provider: ^6.0.5
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
