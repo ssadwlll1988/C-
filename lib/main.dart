@@ -2,11 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'providers/clean_provider.dart';
+import 'providers/deep_scan_provider.dart';
+import 'providers/large_file_provider.dart';
+import 'providers/software_provider.dart';
+import 'providers/analysis_provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => CleanProvider(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CleanProvider()),
+        ChangeNotifierProvider(create: (_) => DeepScanProvider()),
+        ChangeNotifierProvider(create: (_) => LargeFileProvider()),
+        ChangeNotifierProvider(create: (_) => SoftwareProvider()),
+        ChangeNotifierProvider(create: (_) => AnalysisProvider()),
+      ],
       child: const DiskCleanerApp(),
     ),
   );
@@ -18,22 +28,16 @@ class DiskCleanerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'C盘清理大师',
+      title: 'C 盘卫士 - 专业清理工具',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
         useMaterial3: true,
-        scaffoldBackgroundColor: Colors.white,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black87,
-          elevation: 0,
-        ),
-        cardTheme: CardThemeData(
-          color: Colors.grey[50],
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
+        primaryColor: const Color(0xFF4A6CF7),
+        scaffoldBackgroundColor: const Color(0xFFF5F7FA),
+        fontFamily: 'Microsoft YaHei',
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF4A6CF7),
+          primary: const Color(0xFF4A6CF7),
         ),
       ),
       home: const HomeScreen(),

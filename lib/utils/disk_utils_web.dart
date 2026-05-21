@@ -1,22 +1,14 @@
-// Web平台不支持文件系统操作
-// 这些是stub实现，在Web环境下返回空值或模拟数据
-
 Future<String> getDiskInfoImpl() async {
-  return 'Web环境不支持磁盘信息获取';
+  return 'Web N/A';
 }
 
-Future<int> getDirSizeImpl(String path) async {
-  return 0;
-}
+Future<int> getDirSizeImpl(String path) async => 0;
 
-Future<bool> removeDirectoryImpl(String path) async {
-  return false;
-}
+Future<int> getDirSizeFastImpl(
+    String path, int maxDepth, int timeoutSeconds) async => 0;
 
-Future<bool> removeFileImpl(String path) async {
-  return false;
-}
+Future<bool> removeDirectoryImpl(String path) async => false;
 
-List<String> getAvailableDrivesImpl() {
-  return [];
-}
+Future<bool> removeFileImpl(String path) async => false;
+
+List<String> getAvailableDrivesImpl() => [];
