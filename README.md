@@ -1,5 +1,17 @@
 # C盘卫士 - Flutter版本
 
+<div align="center">
+
+[![Release](https://img.shields.io/github/v/release/ssadwlll1988/C-?label=Release&style=for-the-badge)](https://github.com/ssadwlll1988/C-/releases/tag/C%E7%9B%98%E6%B8%85%E7%90%86%E5%B7%A5%E5%85%B7)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge)]()
+
+**🎉 v1.0.0 正式发布！** [立即下载](https://github.com/ssadwlll1988/C-/releases/tag/C%E7%9B%98%E6%B8%85%E7%90%86%E5%B7%A5%E5%85%B7) | [查看更新日志](https://github.com/ssadwlll1988/C-/releases/tag/C%E7%9B%98%E6%B8%85%E7%90%86%E5%B7%A5%E5%85%B7)
+
+</div>
+
+---
+
 这是一个使用Flutter开发的C盘清理工具，功能与Python版本的c-disk-cleaning-program完全一致。
 
 ## ✨ 功能特点
@@ -52,7 +64,19 @@
 
 ## 📦 安装步骤
 
-### 方法一：从GitHub下载
+### 🚀 快速开始（推荐）
+
+**直接下载 Release 版本：**
+- 📥 [GitHub Release](https://github.com/ssadwlll1988/C-/releases/tag/C%E7%9B%98%E6%B8%85%E7%90%86%E5%B7%A5%E5%85%B7)
+- 📥 [Gitee Release](https://gitee.com/ssadwlll1988/Flutter/releases)
+
+下载后解压，双击运行 `c_disk_cleaning_program.exe` 即可使用！
+
+> 💡 **提示**：建议右键 → “以管理员身份运行”以获得完整功能。
+
+---
+
+### 方法一：从源码编译
 
 1. 克隆仓库：
    ```bash
@@ -70,7 +94,25 @@
    flutter run -d windows
    ```
 
-### 方法二：直接运行
+### 方法二：从 Gitee 克隆（国内更快）
+
+1. 克隆仓库：
+   ```bash
+   git clone https://gitee.com/ssadwlll1988/Flutter.git
+   cd Flutter_Project
+   ```
+
+2. 获取依赖：
+   ```bash
+   flutter pub get
+   ```
+
+3. 运行应用：
+   ```bash
+   flutter run -d windows
+   ```
+
+### 方法三：直接运行
 
 如果已经配置好Flutter环境：
 ```bash
@@ -161,6 +203,21 @@ build/windows/x64/runner/Release/
 - [ ] 支持自定义清理规则
 - [ ] 添加定时清理功能
 - [ ] 打包为独立exe文件
+
+## 📥 下载
+
+### 预编译版本（推荐）
+
+- **GitHub Release**: https://github.com/ssadwlll1988/C-/releases/tag/C%E7%9B%98%E6%B8%85%E7%90%86%E5%B7%A5%E5%85%B7
+- **Gitee Release**: https://gitee.com/ssadwlll1988/Flutter/releases
+
+下载后解压，双击运行即可使用！
+
+### 从源码编译
+
+参见上方的"安装步骤"部分。
+
+---
 
 ## 🤝 贡献
 
