@@ -23,6 +23,12 @@
 ### 大文件管理
 ![大文件管理](showimg/3.png)
 
+### 软件搬家
+![软件搬家](showimg/4.png)
+
+### C盘分析
+![C盘分析](showimg/5.png)
+
 ---
 
 这是一个使用Flutter开发的C盘清理工具，功能与Python版本的c-disk-cleaning-program完全一致。
