@@ -12,6 +12,19 @@
 
 ---
 
+## 📸 界面截图
+
+### 基础清理
+![基础清理](showimg/1.png)
+
+### 深度扫描
+![深度扫描](showimg/2.png)
+
+### 大文件管理
+![大文件管理](showimg/3.png)
+
+---
+
 这是一个使用Flutter开发的C盘清理工具，功能与Python版本的c-disk-cleaning-program完全一致。
 
 ## ✨ 功能特点
